@@ -49,8 +49,7 @@ HEADERS += \
 
 
 FORMS += \
-    dialog.ui \
-    score.ui
+    dialog.ui
 
 RESOURCES += \
     resource.qrc

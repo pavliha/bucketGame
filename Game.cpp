@@ -10,7 +10,7 @@
 #include <QDebug>
 #include "Health.h"
 
-Game::Game(QWidget *parent){
+Game::Game(QWidget *){
 
 
     //this->showDialog();

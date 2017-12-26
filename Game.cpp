@@ -11,6 +11,9 @@
 #include "Health.h"
 
 Game::Game(QWidget *parent){
+
+
+    //this->showDialog();
     // create the scene
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,800,600); // make the scene 800x600 instead of infinity by infinity (default)

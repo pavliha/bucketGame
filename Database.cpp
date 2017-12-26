@@ -4,12 +4,23 @@
 #include <QSqlQueryModel>
 #include <QDebug>
 #include <Game.h>
+#include <QDir>
+#include <QCoreApplication>
+#include <QString>
+
 extern Game * game;
 
 Database::Database()
 {
     db = QSqlDatabase::addDatabase("QSQLITE");
-     db.setDatabaseName("/home/pavel/Code/bucketGame/database.sqlite");
+
+    QDir dir(QCoreApplication::applicationDirPath());
+    QString absolute_file_path = dir.absoluteFilePath("../bucketGame/database.sqlite");
+
+
+     qDebug() << absolute_file_path;
+
+     db.setDatabaseName(absolute_file_path);
 
        if (!db.open())
           qDebug() << "Error: connection with database fail";

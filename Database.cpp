@@ -46,7 +46,7 @@ QSqlQueryModel * Database::getScore()
     QSqlQueryModel * model = new QSqlQueryModel();
     QSqlQuery * query = new QSqlQuery(db);
 
-    query->prepare("SELECT score FROM score ORDER BY id");
+    query->prepare("SELECT score FROM score ORDER BY score DESC");
     query->exec();
     model->setQuery(*query);
 

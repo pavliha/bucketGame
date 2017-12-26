@@ -7,6 +7,7 @@
 #include "Player.h"
 #include "Score.h"
 #include "Health.h"
+#include "StartGame.h"
 
 class Game: public QGraphicsView{
 public:

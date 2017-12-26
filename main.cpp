@@ -2,6 +2,7 @@
 #include "Game.h"
 #include "dialog.h"
 #include <QTime>
+#include <StartGame.h>
 /*
 Tutorial Topics:
 -parents
@@ -13,9 +14,15 @@ Game * game;
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
 
-    qsrand(QDateTime::currentMSecsSinceEpoch());
+     qsrand(QDateTime::currentMSecsSinceEpoch());
+    StartGame * startGame = new StartGame;
 
-    game = new Game();
+
+    startGame->show();
+
+
+
+
 
     return a.exec();
 }

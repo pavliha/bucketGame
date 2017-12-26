@@ -8,4 +8,7 @@
         <file>assets/pear.png</file>
         <file>assets/kosholka.png</file>
     </qresource>
+    <qresource prefix="/">
+        <file>database.sqlite</file>
+    </qresource>
 </RCC>

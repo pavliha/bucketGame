@@ -34,7 +34,8 @@ SOURCES += \
     Bomb.cpp \
     Fruit.cpp \
     dialog.cpp \
-    Database.cpp
+    Database.cpp \
+    StartGame.cpp
 
 
 HEADERS += \
@@ -45,11 +46,13 @@ HEADERS += \
     Bomb.h \
     Fruit.h \
     dialog.h \
-    Database.h
+    Database.h \
+    StartGame.h
 
 
 FORMS += \
-    dialog.ui
+    dialog.ui \
+    StartGame.ui
 
 RESOURCES += \
     resource.qrc

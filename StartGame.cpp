@@ -8,6 +8,9 @@ StartGame::StartGame(QWidget *parent) :
     ui(new Ui::StartGame)
 {
     ui->setupUi(this);
+
+    this->setStyleSheet("background-image: url(:/images/assets/forest.jpg);");
+    ui->pushButton->setStyleSheet("background: white; border-radius: 100px;");
 }
 
 StartGame::~StartGame()

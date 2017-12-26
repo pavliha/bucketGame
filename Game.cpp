@@ -60,8 +60,8 @@ Game::Game(QWidget *){
     QObject::connect(timer2,SIGNAL(timeout()),player,SLOT(spawnBomb()));
 
 
-    timer->start(2000);
-    timer2->start(4000);
+    timer->start(1900);
+    timer2->start(4100);
 
     show();
 

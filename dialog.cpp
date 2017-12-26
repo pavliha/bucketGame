@@ -25,6 +25,8 @@ Dialog::Dialog(QWidget *parent) :
     database.addScore();
 
     ui->tableView->setModel( database.getScore());
+
+    ui->tableView->setColumnWidth(0, ui->tableView->width());
 }
 Dialog::~Dialog()
 {
